@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@500&display=swap');
+
+body{
+    background-color: #00ffd0;
+}
+
+/* CSS styling for the header */
+header {
+    background-color: rgb(255, 89, 0);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* CSS styling for the card sections */
+.card {
+    background-color: #f8f8f8;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h2 {
+    color: #fff;
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Colorful card backgrounds */
+.card:nth-child(1) {
+    background-color: #ff1500;
+}
+
+.card:nth-child(2) {
+    background-color: #3001a7;
+}
+
+.card:nth-child(3) {
+    background-color: #6ab000;
+}
+
+.card:nth-child(4) {
+    background-color: #008acf;
+}
+
+.card:nth-child(5) {
+    background-color: #0059ff;
+}
+
+.card:nth-child(6) {
+    background-color: #6A00FF;
+}
+
+
+
+#length-result,
+#weight-result,
+#speed-result,
+#temp-result,
+#storage-result{
+    color: #fff;
+
+}
+
+footer{
+    text-align: center;
+    size: 20px;
+    color: #666;
+}

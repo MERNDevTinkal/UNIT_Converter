@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Unit Converter</h1>
+    </header>
+
+
+    <!--Length Converter-->
+
+
+    <section class="card">
+        <h2>Length Converter</h2>
+        <div class="converter-container">
+            <input type="number" id="length-input" class="converter-input" placeholder="Enter value">
+            <select id="length-from-unit" class="converter-select">
+                <option value="cm">cm</option>
+                <option value="m">m</option>
+                <option value="km">km</option>
+                <option value="mm">mm</option>
+                <option value="inch">inch</option>
+                <option value="foot">foot</option>
+                <option value="mile">mile</option>
+            </select>
+            <select id="length-to-unit" class="converter-select">
+                <option value="cm">cm</option>
+                <option value="m">m</option>
+                <option value="km">km</option>
+                <option value="mm">mm</option>
+                <option value="inch">inch</option>
+                <option value="foot">foot</option>
+                <option value="mile">mile</option>
+            </select>
+            <button onclick="convertLength()">Convert</button>
+        </div>
+        <p id="length-result"></p>
+    </section>
+
+
+
+    <!--Weight Converter-->
+
+
+    <section class="card">
+        <h2>Weight Converter</h2>
+        <div class="converter-container">
+            <input type="number" id="weight-input" class="converter-input" placeholder="Enter value">
+            <select id="weight-from-unit" class="converter-select">
+                <option value="grain">grain</option>
+                <option value="gram">gram</option>
+                <option value="ounce">ounce</option>
+                <option value="pound">pound</option>
+                <option value="kilogram">kilogram</option>
+                <option value="stone">stone</option>
+            </select>
+            <select id="weight-to-unit" class="converter-select">
+                <option value="grain">grain</option>
+                <option value="gram">gram</option>
+                <option value="ounce">ounce</option>
+                <option value="pound">pound</option>
+                <option value="kilogram">kilogram</option>
+                <option value="stone">stone</option>
+            </select>
+            <button onclick="convertWeight()">Convert</button>
+        </div>
+        <p id="weight-result"></p>
+    </section>
+
+
+    <!--Speed Converter-->
+    <section class="card">
+        <h2>Speed Converter</h2>
+        <div class="converter-container">
+            <input type="number" id="speed-input" class="converter-input" placeholder="Enter value">
+            <select id="speed-from-unit" class="converter-select">
+                <option value="ft/s">ft/s</option>
+                <option value="m/s">m/s</option>
+                <option value="km/h">km/h</option>
+                <option value="mile/h">mile/hr</option>
+                <option value="knots">knots</option>
+                <option value="light-speed">light-speed</option>
+            </select>
+            <select id="speed-to-unit" class="converter-select">
+                <option value="ft/s">ft/s</option>
+                <option value="gram">gram</option>
+                <option value="km/h">km/h</option>
+                <option value="mile/hr">mile/hr</option>
+                <option value="knots">knots</option>
+                <option value="light-speed">light-speed</option>
+            </select>
+            <button onclick="convertSpeed()">Convert</button>
+        </div>
+        <p id="speed-result"></p>
+    </section>
+
+
+    <!--Temperature Converter-->
+    <section class="card">
+        <h2>Temperature Converter</h2>
+        <div class="converter-container">
+            <input type="number" id="temp-input" class="converter-input" placeholder="Enter value">
+            <select id="temp-from-unit" class="converter-select">
+                <option value="celsius">celsius</option>
+                <option value="fahrenheit">fahrenheit</option>
+                <option value="kelvin">kelvin</option>
+                <option value="rankine">rankiner</option>
+            </select>
+            <select id="temp-to-unit" class="converter-select">
+                <option value="celsius">celsius</option>
+                <option value="fahrenheit">fahrenheit</option>
+                <option value="kelvin">kelvin</option>
+                <option value="rankiner">rankiner</option>
+            </select>
+            <button onclick="convertTemperature()">Convert</button>
+        </div>
+        <p id="temp-result"></p>
+    </section>
+
+
+    <!--Digital Storage Converter-->
+    <section class="card">
+        <h2>Digital Storage Converter</h2>
+        <div class="converter-container">
+            <input type="number" id="storage-input" class="converter-input" placeholder="Enter value">
+            <select id="storage-from-unit" class="converter-select">
+                <option value="bit">bit</option>
+                <option value="byte">byte</option>
+                <option value="kib">kibibyte (KiB)</option>
+                <option value="mib">mebibyte (MiB)</option>
+                <option value="gib">gibibyte (GiB)</option>
+                <option value="tib">tebibyte (TiB)</option>
+                <option value="pib">pebibyte (PiB)</option>
+            </select>
+            <select id="storage-to-unit" class="converter-select">
+                <option value="bit">bit</option>
+                <option value="byte">byte</option>
+                <option value="kib">kibibyte (KiB)</option>
+                <option value="mib">mebibyte (MiB)</option>
+                <option value="gib">gibibyte (GiB)</option>
+                <option value="tib">tebibyte (TiB)</option>
+                <option value="pib">pebibyte (PiB)</option>
+            </select>
+            <button onclick="convertStorage()">Convert</button>
+        </div>
+        <p id="storage-result"></p>
+    </section>
+<footer>
+    <h3>All the formulas for calculations have been taken from Google</h3>
+</footer>
+
+
+</body>
+
+</html>
